@@ -1,5 +1,6 @@
 import { PDFDocument, StandardFonts } from "pdf-lib";
 import { NextResponse } from "next/server";
+export const runtime = "nodejs";
 export async function POST(req: Request) {
     const {text} = await req.json();
     try {
@@ -13,7 +14,8 @@ page.drawText(text, {
     font
 });
 const pdfBytes = await pdfDoc.save();
-return new NextResponse(pdfBytes.buffer, {
+const buffer = Buffer.from(pdfBytes);
+return new NextResponse(buffer, {
     headers: {
         "Content-Type": "application/pdf",
         "Content-Disposition": "attachment; filename=clima.pdf"
