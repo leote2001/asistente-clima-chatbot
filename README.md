@@ -1,1 +1,1 @@
-Chatbot que recomienda actividades según el clima y ofrece además el pronóstico de una determinada  ciudad para los próximos 7 días.  
+Chatbot que recomienda actividades según el clima y ofrece además el pronóstico de una determinada  ciudad para los próximos 7 días. Proyecto desplegado en: https://asistente-clima-chatbot.vercel.app.  

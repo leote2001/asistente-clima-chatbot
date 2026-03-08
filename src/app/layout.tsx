@@ -34,7 +34,7 @@ export default function RootLayout({
         </header>
         {children}
         <footer>
-          <p>Copyright &copy;2026</p>
+          <p>Copyright &copy;2026. Desarrollado por <a href="https://leosprogramador.portfolio-ls.online" target="_blank"><b>Leo S Programador</b></a></p>
         </footer>
       </body>
     </html>
